@@ -211,7 +211,13 @@ h1 {
         backdrop-filter: blur(6vmax);
     }
 
-
+        h1 {
+        /* Adjust header styles for mobile */
+        font-size: 20px;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        top: 10%; /* Reposition the header for mobile */
+    }
 
     .body {
         margin-top: 10rem; /* Reposition the body content for mobile */
