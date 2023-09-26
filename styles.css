@@ -110,6 +110,7 @@ h1 {
   
   a {
     text-decoration: none;
+    color: #147efb;
   }
   
   #text:has(.fancy:hover) .word:not(.fancy:hover) {
