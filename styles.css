@@ -202,7 +202,13 @@ h1 {
     #blob {
         /* Modify blob size and animation for mobile */
         height: 20vmax;
+        width: 20vmax; /* Ensure the blob is a circle */
         animation-duration: 10s;
+    }
+
+    #blur {
+        /* Adjust blur size for mobile */
+        backdrop-filter: blur(6vmax);
     }
 
     h1 {
@@ -215,6 +221,10 @@ h1 {
 
     .body {
         margin-top: 10rem; /* Reposition the body content for mobile */
+    }
+
+    .line {
+        flex-direction: column; /* Stack lines vertically for mobile */
     }
 
     .word {
