@@ -193,32 +193,33 @@ h1 {
     transform: translate(120%, -30%) rotate(-10deg);
   }
 
-/* Media Query for Smaller Screens */
+/* Media Query for Mobile Devices (Max-width: 720px) */
 @media (max-width: 720px) {
-  body {
-    height: 100vh;
-    
-    margin: 0;
-    overflow: hidden;
-    display: grid;
-    place-items: center;
-    z-index: 999;
-}
-#blob {
-  overflow: hidden;
-}
-  .blur {
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-  }
-    .title {
-        font-size: 10px;
+    body {
+        background-color: #000; /* Adjust background color for mobile */
     }
+
+    #blob {
+        /* Modify blob size and animation for mobile */
+        height: 20vmax;
+        animation-duration: 10s;
+    }
+
+    h1 {
+        /* Adjust header styles for mobile */
+        font-size: 20px;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        top: 10%; /* Reposition the header for mobile */
+    }
+
+    .body {
+        margin-top: 10rem; /* Reposition the body content for mobile */
+    }
+
     .word {
-        font-size: clamp(2rem, 9vw, 10rem);
+        font-size: 2rem; /* Adjust font size for words */
     }
-    .cards {
-        margin-top: -400px;
-    }
+
+    /* Additional mobile-specific styles go here */
 }
